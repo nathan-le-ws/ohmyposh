@@ -25,14 +25,14 @@ template = "{{ .UserName }}@"
 type = 'session'
 style = 'powerline'
 background = 'transparent'
-foreground = '#CC241D'
+foreground = '#9a3b3b'
 template = "{{ .HostName }} "
 
 [[blocks.segments]]
 type = 'path'
 style = 'powerline'
 background = 'transparent'
-foreground = '#61AFEF'
+foreground = '#6a9fb5'
 template = "[{{ .Path }}]"
 
 [blocks.segments.properties]
@@ -44,7 +44,7 @@ style = 'plain'
 background = 'transparent'
 foreground = '#98C379'
 foreground_templates = ['{{ if or (.Working.Changed) (.Staging.Changed) }}#E5C07B{{ end }}']
-template = '{{ .HEAD }} {{ if .Staging.Changed }}<#98C379>{{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#E06C75>{{ .Working.String }}</>{{ end }}<cyan>{{ if gt .Behind 0 }}⇣{{ .Behind }}{{ end }}{{ if gt .Ahead 0 }}⇡{{ .Ahead }}{{ end }}</>'
+template = ' {{ .HEAD }} {{ if .Staging.Changed }}<#98C379>{{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#E06C75>{{ .Working.String }}</>{{ end }}<cyan>{{ if gt .Behind 0 }}⇣{{ .Behind }}{{ end }}{{ if gt .Ahead 0 }}⇡{{ .Ahead }}{{ end }}</>'
 
 [blocks.segments.properties]
 branch_icon = ''
@@ -74,16 +74,16 @@ newline = true
 type = 'text'
 style = 'plain'
 background = 'transparent'
-foreground_templates = ['{{ if gt .Code 0 }}#E06C75{{ else }}#98C379{{ end }}']
+foreground_templates = ['{{ if gt .Code 0 }}#9a3b3b{{ else }}#90a959{{ end }}']
 template = '%'
 
 [transient_prompt]
 background = 'transparent'
-foreground_templates = ['{{ if gt .Code 0 }}#E06C75{{ else }}#98C379{{ end }}']
+foreground_templates = ['{{ if gt .Code 0 }}#9a3b3b{{ else }}#90a959{{ end }}']
 template = '>> '
 
 [secondary_prompt]
-foreground = '#61AFEF'
+foreground = '#90a959'
 background = 'transparent'
 multiline_keepprompt = true
 template = '%% '
