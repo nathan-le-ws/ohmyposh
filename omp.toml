@@ -33,7 +33,7 @@ type = 'path'
 style = 'powerline'
 background = 'transparent'
 foreground = '#61AFEF'
-template = "{{ .Path }} "
+template = "[{{ .Path }}]"
 
 [blocks.segments.properties]
 style = 'full'
@@ -80,7 +80,7 @@ template = '%'
 [transient_prompt]
 background = 'transparent'
 foreground_templates = ['{{ if gt .Code 0 }}#E06C75{{ else }}#98C379{{ end }}']
-template = '#'
+template = '>> '
 
 [secondary_prompt]
 foreground = '#61AFEF'
